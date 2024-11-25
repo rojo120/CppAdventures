@@ -61,6 +61,7 @@ Les contributions sont les bienvenues ! Si vous avez une idée pour améliorer u
 
 ## Auteur
 **rojo120**  
+Étudiant en M2 Mathématiques, Informatiques et Statistique Appliquée.
 Développeur passionné par le C++ et les mathématiques numériques. 🚀
 
 ---
