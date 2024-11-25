@@ -1,40 +1,40 @@
-# EigenSolver - Power Iteration Method
+# EigenSolver - Méthode de Puissance Itérative
 
 ## Description
-EigenSolver is a C++ program that implements the power iteration method to find the dominant eigenvalue and corresponding eigenvector of a square matrix. The program uses iterative computation to converge to the largest eigenvalue by performing matrix-vector multiplication and normalizing the result.
+EigenSolver est un programme en C++ qui implémente la méthode de puissance itérative pour trouver la valeur propre dominante et le vecteur propre correspondant d'une matrice carrée. Le programme effectue des calculs itératifs en multipliant une matrice par un vecteur et en normalisant le résultat pour converger vers la plus grande valeur propre.
 
-## Requirements
-- C++ Compiler (C++11 or higher)
-- Standard C++ libraries
+## Prérequis
+- Compilateur C++ (C++11 ou supérieur)
+- Bibliothèques standard C++
 
 ## Installation
-1. Clone the repository:
+1. Clonez le dépôt :
    ```
    git clone https://github.com/rojo120/CppAdventures.git
    ```
 
-2. Navigate to the `EigenSolver` directory:
+2. Accédez au dossier `EigenSolver` :
    ```
    cd EigenSolver
    ```
 
-3. Compile the program:
+3. Compilez le programme :
    ```
    g++ -o EigenSolver main.cpp iterees.cpp
    ```
 
-## Usage
-1. Create a square matrix of size 5x5 and an initial vector to start the iteration.
+## Utilisation
+1. Créez une matrice carrée de taille 5x5 et un vecteur initial pour démarrer l'itération.
 
-2. Run the program:
+2. Exécutez le programme :
    ```
    ./EigenSolver
    ```
 
-3. The program will display the matrix and compute the largest eigenvalue.
+3. Le programme affichera la matrice et calculera la plus grande valeur propre.
 
-## Example
-Example matrix:
+## Exemple
+Exemple de matrice :
 ```
 | 4  | -1 |  0 |  0 |  0 |
 | -1 |  4 | -1 |  0 |  0 |
@@ -43,13 +43,13 @@ Example matrix:
 |  0 |  0 |  0 | -1 |  3 |
 ```
 
-Output:
+Résultat :
 ```
-Here is the matrix in question:
+Voici la matrice en question :
 4    -1    0    0    0
 -1    4    -1   0    0
 0    -1    4    -1   0
 0    0    -1   4    -1
 0    0    0    -1   3
-The largest eigenvalue is 5.0
+La plus grande valeur propre est 5.0
 ```
