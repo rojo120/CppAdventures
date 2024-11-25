@@ -106,5 +106,5 @@ Le programme alloue dynamiquement les matrices et vecteurs nécessaires. Tous le
 
 ## **Auteur**
 - **Rojo**  
-Étudiant en M1 Mathématiques, Informatiques et Statistique Appliquée.
+Étudiant en M2 Mathématiques, Informatiques et Statistique Appliquée.
 
