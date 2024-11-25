@@ -105,5 +105,5 @@ x[3] = 3.45
 
 ## **Auteur**
 - **Rojo**  
-Étudiant en M1 Mathématiques, Informatiques et Statistique Appliquée.
+Étudiant en M2 Mathématiques, Informatiques et Statistique Appliquée.
 
