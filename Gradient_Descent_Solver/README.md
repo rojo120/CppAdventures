@@ -1,6 +1,3 @@
-Voici un fichier README en français :
-
-```markdown
 # EigenSolver - Méthode de Puissance Itérative
 
 ## Description
