@@ -1,52 +1,58 @@
-# Gradient Descent Solver
+Voici un fichier README en français :
+
+```markdown
+# EigenSolver - Méthode de Puissance Itérative
 
 ## Description
-The Gradient Descent Solver is a C++ implementation that uses the gradient descent algorithm to solve systems of linear equations. The project reads matrix data from a file, applies the gradient descent method, and computes the solution for the system.
+EigenSolver est un programme en C++ qui implémente la méthode de puissance itérative pour trouver la valeur propre dominante et le vecteur propre correspondant d'une matrice carrée. Le programme effectue des calculs itératifs en multipliant une matrice par un vecteur et en normalisant le résultat pour converger vers la plus grande valeur propre.
 
-## Features
-- Load a system of linear equations from a file
-- Solve the system using gradient descent
-- Display the matrix and the solution
-- Support for customizable precision when displaying results
-
-## Requirements
-- C++11 or later
-- C++ compiler (e.g., g++, clang++)
-- A matrix file (e.g., `dim.txt`) with system data
+## Prérequis
+- Compilateur C++ (C++11 ou supérieur)
+- Bibliothèques standard C++
 
 ## Installation
-1. Clone this repository to your local machine:
-   ```bash
+1. Clonez le dépôt :
+   ```
    git clone https://github.com/rojo120/CppAdventures.git
    ```
 
-2. Navigate to the `Gradient_Descent_Solver` directory:
-   ```bash
-   cd Gradient_Descent_Solver
+2. Accédez au dossier `EigenSolver` :
+   ```
+   cd EigenSolver
    ```
 
-3. Compile the code:
-   ```bash
-   g++ -o GradientDescentSolver main.cpp GradientDescentSolver.cpp
+3. Compilez le programme :
+   ```
+   g++ -o EigenSolver main.cpp iterees.cpp
    ```
 
-4. Run the program:
-   ```bash
-   ./GradientDescentSolver
+## Utilisation
+1. Créez une matrice carrée de taille 5x5 et un vecteur initial pour démarrer l'itération.
+
+2. Exécutez le programme :
+   ```
+   ./EigenSolver
    ```
 
-## Usage
-1. Prepare a file with your matrix data (e.g., `dim.txt`). The file should follow the structure:
-   - The first line contains the size of the matrix `n`.
-   - The next `n` lines contain the coefficients of the matrix `A`, followed by the values of the vector `b`.
+3. Le programme affichera la matrice et calculera la plus grande valeur propre.
 
-2. Run the program, which will load the matrix, perform gradient descent, and display the results.
-
-## Example `dim.txt`:
+## Exemple
+Exemple de matrice :
 ```
-3
-2 1 1 5
-1 2 1 5
-1 1 2 5
+| 4  | -1 |  0 |  0 |  0 |
+| -1 |  4 | -1 |  0 |  0 |
+|  0 | -1 |  4 | -1 |  0 |
+|  0 |  0 | -1 |  4 | -1 |
+|  0 |  0 |  0 | -1 |  3 |
 ```
 
+Résultat :
+```
+Voici la matrice en question :
+4    -1    0    0    0
+-1    4    -1   0    0
+0    -1    4    -1   0
+0    0    -1   4    -1
+0    0    0    -1   3
+La plus grande valeur propre est 5.0
+```
