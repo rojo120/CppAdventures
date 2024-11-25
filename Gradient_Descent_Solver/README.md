@@ -1,55 +1,51 @@
-# EigenSolver - Méthode de Puissance Itérative
+# Gradient Descent Solver
 
 ## Description
-EigenSolver est un programme en C++ qui implémente la méthode de puissance itérative pour trouver la valeur propre dominante et le vecteur propre correspondant d'une matrice carrée. Le programme effectue des calculs itératifs en multipliant une matrice par un vecteur et en normalisant le résultat pour converger vers la plus grande valeur propre.
+Le **Gradient Descent Solver** est une implémentation en C++ de l'algorithme de descente de gradient pour résoudre des systèmes d'équations linéaires. Ce projet lit les données d'une matrice à partir d'un fichier, applique la méthode de descente de gradient et calcule la solution du système.
+
+## Fonctionnalités
+- Charger un système d'équations linéaires depuis un fichier
+- Résoudre le système à l'aide de la méthode de descente de gradient
+- Afficher la matrice et la solution
+- Précision personnalisable pour l'affichage des résultats
 
 ## Prérequis
-- Compilateur C++ (C++11 ou supérieur)
-- Bibliothèques standard C++
+- C++11 ou version ultérieure
+- Un compilateur C++ (par exemple : g++, clang++)
+- Un fichier de matrice (par exemple, `dim.txt`) contenant les données du système
 
 ## Installation
-1. Clonez le dépôt :
-   ```
+1. Clonez ce dépôt sur votre machine locale :
+   ```bash
    git clone https://github.com/rojo120/CppAdventures.git
    ```
 
-2. Accédez au dossier `EigenSolver` :
-   ```
-   cd EigenSolver
+2. Accédez au répertoire `Gradient_Descent_Solver` :
+   ```bash
+   cd Gradient_Descent_Solver
    ```
 
-3. Compilez le programme :
+3. Compilez le code :
+   ```bash
+   g++ -o GradientDescentSolver main.cpp GradientDescentSolver.cpp
    ```
-   g++ -o EigenSolver main.cpp iterees.cpp
+
+4. Exécutez le programme :
+   ```bash
+   ./GradientDescentSolver
    ```
 
 ## Utilisation
-1. Créez une matrice carrée de taille 5x5 et un vecteur initial pour démarrer l'itération.
+1. Préparez un fichier contenant les données de votre matrice (par exemple, `dim.txt`). La structure du fichier doit être la suivante :
+   - La première ligne contient la taille de la matrice `n`.
+   - Les `n` lignes suivantes contiennent les coefficients de la matrice `A`, suivis des valeurs du vecteur `b`.
 
-2. Exécutez le programme :
-   ```
-   ./EigenSolver
-   ```
+2. Exécutez le programme, qui chargera la matrice, appliquera la méthode de descente de gradient et affichera les résultats.
 
-3. Le programme affichera la matrice et calculera la plus grande valeur propre.
-
-## Exemple
-Exemple de matrice :
+## Exemple de fichier `dim.txt` :
 ```
-| 4  | -1 |  0 |  0 |  0 |
-| -1 |  4 | -1 |  0 |  0 |
-|  0 | -1 |  4 | -1 |  0 |
-|  0 |  0 | -1 |  4 | -1 |
-|  0 |  0 |  0 | -1 |  3 |
-```
-
-Résultat :
-```
-Voici la matrice en question :
-4    -1    0    0    0
--1    4    -1   0    0
-0    -1    4    -1   0
-0    0    -1   4    -1
-0    0    0    -1   3
-La plus grande valeur propre est 5.0
+3
+2 1 1 5
+1 2 1 5
+1 1 2 5
 ```
